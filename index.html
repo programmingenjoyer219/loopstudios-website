@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="js/script.js" defer></script>
+		<link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Loopstudios</title>
+	</head>
+	<body>
+		<!-- navbar and hero -->
+		<header id="hero" class="relative">
+			<div
+				id="hero-container"
+				class="mx-auto w-full p-10 pb-[12rem] flex flex-col items-center gap-[8rem] md:h-screen"
+			>
+				<!-- navbar -->
+				<nav id="nav" class="flex items-center justify-between w-full">
+					<img src="./images/logo.svg" alt="Logo" />
+					<!-- hamburger button -->
+					<button
+						id="hamburger-button"
+						class="p-4 grid grid-rows-3 gap-1 z-10 md:hidden"
+					>
+						<span class="bg-white h-0.5 w-6"></span>
+						<span class="bg-white h-0.5 w-6"></span>
+						<span class="bg-white h-0.5 w-6"></span>
+					</button>
+					<!-- desktop menu -->
+					<ul
+						class="hidden md:grid grid-rows-1 md:grid-cols-5 place-items-center gap-4 text-white"
+					>
+						<li>
+							<a
+								class="hover:underline underline-offset-4 font-bold text-xl"
+								href="#"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:underline underline-offset-4 font-bold text-xl"
+								href="#"
+								>Career</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:underline underline-offset-4 font-bold text-xl"
+								href="#"
+								>Events</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:underline underline-offset-4 font-bold text-xl"
+								href="#"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:underline underline-offset-4 font-bold text-xl"
+								href="#"
+								>Support</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<!-- white-box -->
+				<div
+					id="hero-white-box"
+					class="md:relative outline outline-white p-3 md:p-9 md:bottom-8"
+				>
+					<h1 class="text-4xl md:text-6xl text-white uppercase">
+						Impressive Experiences That Deliver
+					</h1>
+				</div>
+				<!-- mobile menu -->
+				<div
+					id="mobile-menu"
+					class="absolute bg-black top-0 left-0 w-full h-screen text-white place-items-center md:hidden"
+				>
+					<ul
+						id="mobile-links"
+						class="grid place-items-center gap-8 text-center"
+					>
+						<li><a class="uppercase hover:text-pink-500" href="#">About</a></li>
+						<li>
+							<a class="uppercase hover:text-pink-500" href="#">Career</a>
+						</li>
+						<li>
+							<a class="uppercase hover:text-pink-500" href="#">Events</a>
+						</li>
+						<li>
+							<a class="uppercase hover:text-pink-500" href="#">Products</a>
+						</li>
+						<li>
+							<a class="uppercase hover:text-pink-500" href="#">Support</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- About Us -->
+		<section id="about">
+			<div
+				class="mx-auto w-full px-8 py-16 min-h-screen grid place-items-center gap-8"
+			>
+				<div
+					id="about-section-layout"
+					class="space-y-8 md:grid md:grid-cols-3 md:space-y-0 md:min-h-[80%]"
+				>
+					<img
+						class="mx-auto md:hidden"
+						src="./images/desktop/image-interactive.jpg"
+						alt=""
+					/>
+					<!-- container- background image -->
+					<div id="image-container" class="hidden md:block"></div>
+					<!-- about us - text -->
+					<div
+						id="about-info"
+						class="text-center grid place-items-center md:text-left md:p-16 md:col-span-2"
+					>
+						<h3 class="mb-8 text-4xl md:text-5xl uppercase">
+							The leader in interactive VR
+						</h3>
+						<p class="md:text-2xl">
+							Founded in 2011, Loopstudios has been producing world-class
+							virtual reality projects for some of the best companies around the
+							globe. Our award-winning creations have transformed businesses
+							through digital experiences that bind to their brand.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Showcase -->
+		<section id="showcase">
+			<div class="mx-auto w-full px-8 py-16 grid place-items center gap-8">
+				<!-- heading -->
+				<div class="flex items-center justify-center md:justify-between">
+					<h2 class="text-4xl text-center uppercase">Our Creations</h2>
+					<!-- see all button -->
+					<button
+						class="hidden md:block uppercase border-2 border-black text-black hover:bg-black hover:text-white font-mono text-xl font-bold p-2 px-8"
+					>
+						See All
+					</button>
+				</div>
+				<!-- image-grid -->
+				<div
+					id="showcase-image-grid"
+					class="flex flex-col items-center gap-4 md:grid md:grid-cols-4 md:grid-rows-2"
+				>
+					<!-- deep earth -->
+					<div
+						id="deep-earth"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							Deep Earth
+						</h3>
+					</div>
+
+					<!-- night arcade -->
+					<div
+						id="night-arcade"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							Night Arcade
+						</h3>
+					</div>
+
+					<!-- soccer team vr -->
+					<div
+						id="soccer-team-vr"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							Soccer Team VR
+						</h3>
+					</div>
+
+					<!-- the grid -->
+					<div id="the-grid" class="w-full group h-[35vw] px-8 py-12 relative">
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							The Grid
+						</h3>
+					</div>
+
+					<!-- pocket borealis -->
+					<div
+						id="pocket-borealis"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							Pocket Borealis
+						</h3>
+					</div>
+
+					<!-- from up above vr -->
+					<div
+						id="from-up-above-vr"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							From Up Above VR
+						</h3>
+					</div>
+
+					<!-- the curiosity -->
+					<div
+						id="the-curiosity"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							The Curiosity
+						</h3>
+					</div>
+
+					<!-- make it fisheye -->
+					<div
+						id="make-it-fisheye"
+						class="w-full group h-[35vw] px-8 py-12 relative"
+					>
+						<h3
+							class="group-hover:scale-110 group-hover:text-black transition duration-200 max-w-[12ch] absolute left-[1rem] bottom-[1rem] uppercase text-2xl text-white md:max-w-[10ch]"
+						>
+							Make It Fisheye
+						</h3>
+					</div>
+				</div>
+				<!-- see all button -->
+				<button
+					class="uppercase border-2 border-black text-black hover:bg-black hover:text-white font-mono text-xl font-bold p-2 md:hidden"
+				>
+					See All
+				</button>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer>
+			<div
+				class="mx-auto px-8 py-16 bg-black grid place-items-center gap-8 md:grid-cols-2"
+			>
+				<div class="grid place-items-center gap-4 md:place-items-start">
+					<!-- logo -->
+					<img src="./images/logo.svg" alt="" />
+					<!-- links -->
+					<ul
+						class="text-white grid place-items-center gap-4 md:flex md:justify-center md:items-center"
+					>
+						<li>
+							<a class="hover:underline underline-offset-4 font-bold" href="#"
+								>About</a
+							>
+						</li>
+						<li>
+							<a class="hover:underline underline-offset-4 font-bold" href="#"
+								>Career</a
+							>
+						</li>
+						<li>
+							<a class="hover:underline underline-offset-4 font-bold" href="#"
+								>Events</a
+							>
+						</li>
+						<li>
+							<a class="hover:underline underline-offset-4 font-bold" href="#"
+								>Products</a
+							>
+						</li>
+						<li>
+							<a class="hover:underline underline-offset-4 font-bold" href="#"
+								>Support</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="grid place-items-center gap-4 md:place-items-start">
+					<!-- socials -->
+					<ul class="grid grid-cols-4 gap-4">
+						<li>
+							<a href=""><img src="./images/icon-twitter.svg" alt="" /></a>
+						</li>
+						<li>
+							<a href=""><img src="./images/icon-facebook.svg" alt="" /></a>
+						</li>
+						<li>
+							<a href=""><img src="./images/icon-pinterest.svg" alt="" /></a>
+						</li>
+						<li>
+							<a href=""><img src="./images/icon-instagram.svg" alt="" /></a>
+						</li>
+					</ul>
+					<!-- copyright statement -->
+					<p class="text-zinc-400 text-center">
+						© 2022 Loopstudios. All Rights Reserved
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

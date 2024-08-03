@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+#hero {
+	background: url("../images/mobile/image-hero.jpg") center center / cover
+		no-repeat;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+#mobile-menu.active {
+	display: grid;
+}
+
+#hamburger-button,
+#hamburger-button.cross-button span {
+	transition: transform ease-out 200ms;
+}
+
+#hamburger-button.cross-button {
+	transform: rotate(90deg);
+	gap: 0;
+}
+
+#hamburger-button.cross-button span:first-of-type {
+	transform: rotate(45deg) translateX(2px);
+}
+
+#hamburger-button.cross-button span:nth-of-type(2) {
+	display: none;
+}
+
+#hamburger-button.cross-button span:last-of-type {
+	transform: rotate(-45deg) translateX(2px);
+}
+
+#about #image-container {
+	background: url("../images/desktop/image-interactive.jpg") center center /
+		cover no-repeat;
+}
+
+#showcase-image-grid #deep-earth {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-deep-earth.jpg") center center / cover no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-deep-earth.jpg") center center / cover
+				no-repeat;
+	}
+}
+
+#showcase-image-grid #night-arcade {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-night-arcade.jpg") center center / cover
+			no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-night-arcade.jpg") center center / cover
+				no-repeat;
+	}
+}
+
+#showcase-image-grid #soccer-team-vr {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-soccer-team.jpg") center center / cover
+			no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-soccer-team.jpg") center center / cover
+				no-repeat;
+	}
+}
+
+#showcase-image-grid #the-grid {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-grid.jpg") center center / cover no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-grid.jpg") center center / cover no-repeat;
+	}
+}
+
+#showcase-image-grid #from-up-above-vr {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-from-above.jpg") center center / cover no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-from-above.jpg") center center / cover
+				no-repeat;
+	}
+}
+
+#showcase-image-grid #pocket-borealis {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-pocket-borealis.jpg") center center / cover
+			no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-pocket-borealis.jpg") center center / cover
+				no-repeat;
+	}
+}
+
+#showcase-image-grid #the-curiosity {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-curiosity.jpg") center center / cover no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-curiosity.jpg") center center / cover
+				no-repeat;
+	}
+}
+
+#showcase-image-grid #make-it-fisheye {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+		url("../images/mobile/image-fisheye.jpg") center center / cover no-repeat;
+
+	&:hover {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.75),
+				rgba(255, 255, 255, 0.75)
+			),
+			url("../images/mobile/image-fisheye.jpg") center center / cover no-repeat;
+	}
+}
+
+@media (min-width: 576px) {
+	#hero {
+		background: url("../images/desktop/image-hero.jpg") top left / cover
+			no-repeat;
+	}
+
+	#hero-white-box {
+		max-width: 500px;
+	}
+
+	#hero-container {
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+@media (min-width: 768px) {
+	#showcase-image-grid #deep-earth {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-deep-earth.jpg") center center / cover
+				no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-deep-earth.jpg") center center / cover
+					no-repeat;
+		}
+	}
+
+	#showcase-image-grid #night-arcade {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-night-arcade.jpg") center center / cover
+				no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-night-arcade.jpg") center center / cover
+					no-repeat;
+		}
+	}
+
+	#showcase-image-grid #soccer-team-vr {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-soccer-team.jpg") center center / cover
+				no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-soccer-team.jpg") center center / cover
+					no-repeat;
+		}
+	}
+
+	#showcase-image-grid #the-grid {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-grid.jpg") center center / cover no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-grid.jpg") center center / cover no-repeat;
+		}
+	}
+
+	#showcase-image-grid #from-up-above-vr {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-from-above.jpg") center center / cover
+				no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-from-above.jpg") center center / cover
+					no-repeat;
+		}
+	}
+
+	#showcase-image-grid #pocket-borealis {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-pocket-borealis.jpg") center center / cover
+				no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-pocket-borealis.jpg") center center / cover
+					no-repeat;
+		}
+	}
+
+	#showcase-image-grid #the-curiosity {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-curiosity.jpg") center center / cover
+				no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-curiosity.jpg") center center / cover
+					no-repeat;
+		}
+	}
+
+	#showcase-image-grid #make-it-fisheye {
+		background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)),
+			url("../images/desktop/image-fisheye.jpg") center center / cover no-repeat;
+
+		&:hover {
+			background: linear-gradient(
+					rgba(255, 255, 255, 0.75),
+					rgba(255, 255, 255, 0.75)
+				),
+				url("../images/desktop/image-fisheye.jpg") center center / cover
+					no-repeat;
+		}
+	}
+}
